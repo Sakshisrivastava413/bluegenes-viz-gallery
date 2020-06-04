@@ -1,14 +1,14 @@
-export default {
-    imURL: {
+export default [
+    {
         root: 'https://www.humanmine.org/humanmine',
     },
-    dataToInitialiseToolWith: {
+    {
         class: 'Protein',
         format: 'id',
         value: "128, 5468"
     },
-    toolState: {},
-    config: {
+    {},
+    {
         "accepts": [
             "id"
         ],
@@ -32,11 +32,11 @@ export default {
             "cljs": "bluegenesInteractionsNetwork"
         }
     },
-    navigate: function (type, data, mine) {
+    function (type, data, mine) {
         var someMine = mine ? "on ".concat(mine) : null;
         var msg = ["Navigating to", type, someMine, "with data:"]
             .filter(function (e) { return e })
             .join(" ");
         console.log(msg, data);
     }
-};
+];

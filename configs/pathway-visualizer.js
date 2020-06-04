@@ -1,5 +1,14 @@
-export default {
-  config: {
+export default [
+  {
+    root: 'https://www.humanmine.org/humanmine',
+  },
+  {
+    class: 'Protein',
+    format: 'id',
+    value: "128, 5468"
+  },
+  {},
+  {
     "accepts": ["id"],
     "classes":
       ["Gene"]
@@ -21,20 +30,11 @@ export default {
       "cljs": "bluegenesPathwayVisualizer"
     }
   },
-  imURL: {
-    root: 'https://www.humanmine.org/humanmine',
-  },
-  dataToInitialiseToolWith: {
-    class: 'Protein',
-    format: 'id',
-    value: "128, 5468"
-  },
-  toolState: {},
-  navigate: function (type, data, mine) {
+  function (type, data, mine) {
     var someMine = mine ? "on ".concat(mine) : null;
     var msg = ["Navigating to", type, someMine, "with data:"]
       .filter(function (e) { return e })
       .join(" ");
     console.log(msg, data);
   }
-}
+];
