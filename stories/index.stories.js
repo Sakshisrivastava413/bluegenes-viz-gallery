@@ -3,6 +3,7 @@ export default {
 };
 
 import interaction from '../configs/interaction-network';
+import pathway from '../configs/pathway-visualizer';
 
 export const InteractionNetwork = () => {
   const elem = document.createElement('div');
@@ -23,6 +24,31 @@ export const InteractionNetwork = () => {
       interaction.toolState,
       interaction.config,
       interaction.navigate
+    );
+  };
+
+  return elem;
+};
+
+export const PathwayVisualizer = () => {
+  const elem = document.createElement('div');
+  const script = document.createElement('script');
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = 'http://localhost:6006/pathway-visualizer/style.css';
+  script.src = 'http://localhost:6006/pathway-visualizer/bundle.js';
+  elem.classList.add('bluegenesPathwayVisualizer');
+  document.head.append(css);
+  document.body.append(script);
+
+  script.onload = () => {
+    window.bluegenesPathwayVisualizer.main(
+      elem,
+      pathway.imURL,
+      pathway.dataToInitialiseToolWith,
+      pathway.toolState,
+      pathway.config,
+      pathway.navigate
     );
   };
 
