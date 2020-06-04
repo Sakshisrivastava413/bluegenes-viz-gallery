@@ -2,12 +2,15 @@ export default {
   title: 'Demo',
 };
 
-export const Heading = () => '<h1>Hello World</h1>';
-
-export const Button = () => {
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.innerText = 'Hello Button';
-  btn.addEventListener('click', e => console.log(e));
-  return btn;
+export const InteractionNetwork = () => {
+  const elem = document.createElement('div');
+  const script = document.createElement('script');
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = 'http://localhost:6006/interaction-network/style.css';
+  script.src = 'http://localhost:6006/interaction-network/bundle.js';
+  elem.classList.add('bluegenesInteractionsNetwork');
+  document.head.append(css);
+  document.body.append(script);
+  return elem;
 };
