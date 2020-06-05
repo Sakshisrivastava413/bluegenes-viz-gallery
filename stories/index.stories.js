@@ -10,6 +10,8 @@ import expressionBoxSwarmParams from '../configs/expression-box-swarm-visualizer
 // import goTermParams from '../configs/go-term-visualizer';
 import proteinAtlasTissueExpressionParams from '../configs/protein-atlas-tissue-expression-visualizer';
 // import proteinParams from '../configs/protein-visualizer';
+import tissueExpressionArrayexpressParams from '../configs/tissue-expression-arrayexpress-visualizer';
+import tissueExpressionParams from '../configs/tissue-expression-visualizer';
 import { renderTool } from '../util';
 
 import imjs from 'imjs';
@@ -46,3 +48,11 @@ export const ProteinAtlasTissueExpressionVisualizer = () => (
 // export const ProteinVisualizer = () => (
 //   renderTool('bluegenesProteinVisualizer', proteinParams)
 // );
+
+export const TissueExpressionArrayexpressVisualizer = () => (
+  renderTool('bluegenesTissueExpressionArrayexpressVisualizer', tissueExpressionArrayexpressParams)
+);
+
+export const TissueExpressionVisualizer = () => (
+  renderTool('bluegenesTissueExpressionVisualizer', tissueExpressionParams)
+);
