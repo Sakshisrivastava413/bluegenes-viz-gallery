@@ -5,6 +5,7 @@ export default {
 import interactionParams from '../configs/interaction-network';
 import pathwayParams from '../configs/pathway-visualizer';
 import goConceptParams from '../configs/go-concept-relation';
+import DiseaseExpressionArrayexpressParams from '../configs/disease-expression-arrayexpress-visualizer';
 import { renderTool } from '../util';
 
 import imjs from 'imjs';
@@ -20,4 +21,8 @@ export const PathwayVisualizer = () => (
 
 export const GoConceptRelation = () => (
   renderTool('BlueGenesGoConceptRelation', goConceptParams)
+);
+
+export const DiseaseExpressionArrayexpressVisualizer = () => (
+  renderTool('BlueGenesDiseaseExpressionArrayexpressVisualizer', DiseaseExpressionArrayexpressParams)
 );
