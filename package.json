@@ -23,6 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@storybook/html": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "imjs": "^4.0.0"
   }
 }
