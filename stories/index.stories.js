@@ -4,6 +4,7 @@ export default {
 
 import interactionParams from '../configs/interaction-network';
 import pathwayParams from '../configs/pathway-visualizer';
+import goConceptParams from '../configs/go-concept-relation';
 import { renderTool } from '../util';
 
 import imjs from 'imjs';
@@ -15,4 +16,8 @@ export const InteractionNetwork = () => (
 
 export const PathwayVisualizer = () => (
   renderTool('bluegenesPathwayVisualizer', pathwayParams)
+);
+
+export const GoConceptRelation = () => (
+  renderTool('BlueGenesGoConceptRelation', goConceptParams)
 );
