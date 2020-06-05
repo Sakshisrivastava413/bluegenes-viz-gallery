@@ -5,7 +5,11 @@ export default {
 import interactionParams from '../configs/interaction-network';
 import pathwayParams from '../configs/pathway-visualizer';
 import goConceptParams from '../configs/go-concept-relation';
-import DiseaseExpressionArrayexpressParams from '../configs/disease-expression-arrayexpress-visualizer';
+import diseaseExpressionArrayexpressParams from '../configs/disease-expression-arrayexpress-visualizer';
+import expressionBoxSwarmParams from '../configs/expression-box-swarm-visualizer';
+// import goTermParams from '../configs/go-term-visualizer';
+import proteinAtlasTissueExpressionParams from '../configs/protein-atlas-tissue-expression-visualizer';
+// import proteinParams from '../configs/protein-visualizer';
 import { renderTool } from '../util';
 
 import imjs from 'imjs';
@@ -24,5 +28,21 @@ export const GoConceptRelation = () => (
 );
 
 export const DiseaseExpressionArrayexpressVisualizer = () => (
-  renderTool('BlueGenesDiseaseExpressionArrayexpressVisualizer', DiseaseExpressionArrayexpressParams)
+  renderTool('BlueGenesDiseaseExpressionArrayexpressVisualizer', diseaseExpressionArrayexpressParams)
 );
+
+export const ExpressionBoxSwarmVisualizer = () => (
+  renderTool('bluegenesExpressionBoxSwarmVisualizer', expressionBoxSwarmParams)
+);
+
+// export const GOTermVisualizer = () => (
+//   renderTool('bluegenes_GO_term_visualizer', goTermParams)
+// );
+
+export const ProteinAtlasTissueExpressionVisualizer = () => (
+  renderTool('bluegenesProteinAtlasTissueExpressionVisualizer', proteinAtlasTissueExpressionParams)
+);
+
+// export const ProteinVisualizer = () => (
+//   renderTool('bluegenesProteinVisualizer', proteinParams)
+// );
