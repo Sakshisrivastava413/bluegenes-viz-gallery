@@ -2,6 +2,12 @@ export default {
   title: 'Bluegenes',
 };
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+window.React = React;
+window.ReactDOM = ReactDOM;
+
 import interactionParams from '../configs/interaction-network';
 import pathwayParams from '../configs/pathway-visualizer';
 import goConceptParams from '../configs/go-concept-relation';

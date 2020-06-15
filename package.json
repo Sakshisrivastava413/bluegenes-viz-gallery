@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./public"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,14 @@
     "url": "https://github.com/Sakshisrivastava413/bluegenes-viz-gallery/issues"
   },
   "homepage": "https://github.com/Sakshisrivastava413/bluegenes-viz-gallery#readme",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@storybook/html": "^5.3.19",
     "babel-loader": "^8.1.0",
     "imjs": "^4.0.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

@@ -3,9 +3,11 @@ export default [
     root: 'https://www.humanmine.org/humanmine',
   },
   {
-    class: 'Protein',
-    format: 'id',
-    value: "128, 5468"
+    Gene: {
+      class: 'Gene',
+      format: 'id, ids',
+      value: [128, 5468]
+    }
   },
   {},
   {
@@ -28,7 +30,8 @@ export default [
     "toolName": {
       "human": "Bluegenes Pathway Visualizer",
       "cljs": "bluegenesPathwayVisualizer"
-    }
+    },
+    "version": 2
   },
   function (type, data, mine) {
     var someMine = mine ? "on ".concat(mine) : null;

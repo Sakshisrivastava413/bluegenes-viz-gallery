@@ -3,9 +3,11 @@ export default [
         root: 'https://www.humanmine.org/humanmine',
     },
     {
-        class: 'Protein',
-        format: 'id',
-        value: 1196911
+        Gene: {
+            class: 'Gene',
+            format: 'id',
+            value: 1196911
+        }
     },
     {},
     {
@@ -29,6 +31,7 @@ export default [
         "toolName": {
             "human": "BlueGenes Tissue Expression Arrayexpress Visualizer",
             "cljs": "bluegenesTissueExpressionArrayexpressVisualizer"
-        }
+        },
+        "version": 2
     }
 ];

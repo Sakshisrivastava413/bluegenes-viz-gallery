@@ -3,9 +3,11 @@ export default [
         root: 'https://www.humanmine.org/humanmine'
     },
     {
-        class: 'Protein',
-        format: 'id',
-        value: 1205472
+        Gene: {
+            class: 'Gene',
+            format: 'id',
+            value: 1205472
+        }
     },
     {},
     {
@@ -29,6 +31,7 @@ export default [
         "toolName": {
             "human": "BlueGenes Expression Box Swarm Visualizer",
             "cljs": "bluegenesExpressionBoxSwarmVisualizer"
-        }
+        },
+        "version": 2
     }
 ];
