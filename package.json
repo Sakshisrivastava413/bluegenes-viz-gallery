@@ -21,11 +21,15 @@
   "homepage": "https://github.com/Sakshisrivastava413/bluegenes-viz-gallery#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@storybook/addons": "^5.3.19",
     "@storybook/html": "^5.3.19",
+    "@storybook/theming": "^5.3.19",
     "babel-loader": "^8.1.0",
     "imjs": "^4.0.0"
   },
   "dependencies": {
+    "@intermine/bluegenes-disease-expression-arrayexpress-visualizer": "^2.0.0",
+    "fs-extra": "^9.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
