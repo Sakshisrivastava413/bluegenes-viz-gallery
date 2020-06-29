@@ -45,7 +45,7 @@ export const ExpressionBoxSwarmVisualizer = () => (
 );
 
 export const GOTermVisualizer = () => (
-  renderTool('bluegenes_GO_term_visualizer', goTermParams)
+  renderTool('bluegenesGoTermVisualizer', goTermParams)
 );
 
 export const ProteinAtlasTissueExpressionVisualizer = () => (

@@ -26,7 +26,7 @@ export default [
         },
         "toolName": {
             "human": "BlueGenes GO-term Visualizer",
-            "cljs": "bluegenes_GO_term_visualizer"
+            "cljs": "bluegenesGoTermVisualizer"
         }
     }
 
