@@ -30,6 +30,13 @@
   },
   "dependencies": {
     "@intermine/bluegenes-disease-expression-arrayexpress-visualizer": "^2.0.0",
+    "@intermine/bluegenes-expression-box-swarm-visualizer": "^1.0.5",
+    "@intermine/bluegenes-go-term-visualizer": "^2.0.0",
+    "@intermine/bluegenes-msa-viewer": "^2.0.0",
+    "@intermine/bluegenes-protein-atlas-tissue-expression-visualizer": "^2.0.0",
+    "@intermine/bluegenes-protein-visualizer": "^1.0.6",
+    "@intermine/bluegenes-tissue-expression-arrayexpress-visualizer": "^2.0.0",
+    "@intermine/bluegenes-tissue-expression-visualizer": "^2.0.0",
     "fs-extra": "^9.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
