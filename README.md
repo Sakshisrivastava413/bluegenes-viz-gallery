@@ -4,5 +4,5 @@ This tool is using [storybook](https://storybook.js.org/) to show all our bluege
 
 ### To set up locally for development
 1. Clone the repo
-2. `cd bluegenes-interaction-network` and then `npm install` to install dependencies
+2. `cd bluegenes-viz-gallery` and then `npm install` to install dependencies
 3. Run `npm run storybook` to start the local server
