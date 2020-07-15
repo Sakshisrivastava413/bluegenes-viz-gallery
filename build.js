@@ -1,10 +1,6 @@
 const fs = require('fs');
 const fse = require('fs-extra');
-const package = require('./package.json');
-
-const tools = Object.keys(package.dependencies)
-	.filter((name) => /@intermine[a-zA-Z/0-9]+/.test(name))
-	.map((name) => `node_modules/${name}`);
+const tools = require('./tools');
 
 const storybookSetup = `
   export default {
@@ -28,11 +24,11 @@ fs.mkdirSync('configs', { recursive: true });
 fs.writeFileSync(`stories/index.stories.js`, storybookSetup);
 
 tools.map((tool) => {
-	const config = JSON.parse(fs.readFileSync(`${tool}/config.json`));
+	const config = JSON.parse(fs.readFileSync(`node_modules/${tool.name}/config.json`));
 	const toolName = config.toolName.cljs;
 	fs.writeFileSync(`configs/${toolName}.json`, JSON.stringify(config));
 
-	const distSource = `${tool}/dist`;
+	const distSource = `node_modules/${tool.name}/dist`;
 	const distDestination = `public/${toolName}`;
 	if (!fs.existsSync(distDestination)) {
 		fs.mkdirSync(distDestination, { recursive: true });
