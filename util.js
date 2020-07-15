@@ -1,4 +1,4 @@
-export const renderTool = (name, params) => {
+export const renderTool = (name, params, url, entity) => {
 	const navigate = function (type, data, mine) {
 		var someMine = mine ? 'on '.concat(mine) : null;
 		var msg = ['Navigating to', type, someMine, 'with data:']
@@ -20,7 +20,7 @@ export const renderTool = (name, params) => {
 	document.body.append(script);
 
 	script.onload = () => {
-		window[name].main(elem, navigate, ...params);
+		window[name].main(elem, url, entity, {}, params, navigate);
 	};
 	return elem;
 };

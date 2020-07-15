@@ -44,7 +44,7 @@ tools.map((tool) => {
 	const text = `
   import ${toolName}Params from '../configs/${toolName}.json';
   export const ${title} = () => (
-    renderTool('${toolName}', ${toolName}Params)
+    renderTool('${toolName}', ${toolName}Params, ${JSON.stringify(tool.imURL)}, ${JSON.stringify(tool.dataToInitialiseToolWith)})
   );
   `;
 
